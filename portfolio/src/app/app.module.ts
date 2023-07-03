@@ -12,6 +12,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { CartComponent } from './cart/cart.component';
 import { DetailsComponent } from './details/details.component';
+import { HeroComponent } from './hero/hero.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { DetailsComponent } from './details/details.component';
     NavbarComponent,
     FooterComponent,
     CartComponent,
-    DetailsComponent
+    DetailsComponent,
+    HeroComponent
   ],
   imports: [
     BrowserModule,
