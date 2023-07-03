@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Icourses } from '../Icourse';
+import { courses } from '../course';
 
 @Component({
   selector: 'app-courses',
@@ -6,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./courses.component.scss']
 })
 export class CoursesComponent {
-
+  courses: Icourses[] = courses;
 }
