@@ -8,6 +8,10 @@ export class ServicService {
   cart: Icourses[] = [];
   constructor() { }
 
+  getCartLength(): number {
+    return this.cart.length;
+  }
+
   addQuantity(productId: number) {
     const product = this.cart.find((product) => product.id === productId);
     if (product) {
@@ -53,5 +57,14 @@ export class ServicService {
   clearCart() {
     this.cart = [];
     return this.cart;
+  }
+
+  calculateTotal() {
+    let total: number = 0;
+    for (let val of this.cart) {
+      total += val.price * val.quantity;
+    }
+    const formattedTotal = Number(total.toFixed(2));
+    return formattedTotal;
   }
 }
