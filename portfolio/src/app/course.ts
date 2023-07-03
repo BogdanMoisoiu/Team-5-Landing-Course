@@ -1,4 +1,4 @@
-export const courses: { name: string, img:string, price: number; teacher:string, teachershort: string, teacherlong: string, locationshort: string, locationlong: string, duration: number, availability: boolean, id: number, quantity: number} []=[{
+export const courses: { name: string, img: string, price: number; teacher: string, teachershort: string, teacherlong: string, locationshort: string, locationlong: string, duration: number, availability: boolean, id: number, quantity: number }[] = [{
     name: "HTML+CSS",
     img: "/assets/htmlcss.png",
     price: 250,
@@ -11,7 +11,7 @@ export const courses: { name: string, img:string, price: number; teacher:string,
     availability: true,
     id: 1,
     quantity: 0
-},  {
+}, {
     name: "Javascript",
     img: "/assets/Javascript.png",
     price: 750,
@@ -24,7 +24,7 @@ export const courses: { name: string, img:string, price: number; teacher:string,
     availability: true,
     id: 2,
     quantity: 0
-},  {
+}, {
     name: "Php",
     img: "/assets/php.png",
     price: 2250,
@@ -37,7 +37,7 @@ export const courses: { name: string, img:string, price: number; teacher:string,
     availability: true,
     id: 3,
     quantity: 0
-},  {
+}, {
     name: "Java",
     img: "/assets/java.png",
     price: 2000,
@@ -50,7 +50,7 @@ export const courses: { name: string, img:string, price: number; teacher:string,
     availability: true,
     id: 4,
     quantity: 0
-},  {
+}, {
     name: "C",
     img: "/assets/C.png",
     price: 2500,
@@ -63,7 +63,7 @@ export const courses: { name: string, img:string, price: number; teacher:string,
     availability: true,
     id: 5,
     quantity: 0
-},  {
+}, {
     name: "Python",
     img: "/assets/python2.png",
     price: 3200,
