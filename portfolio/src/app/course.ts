@@ -1,6 +1,6 @@
 export const courses: { name: string, img:string, price: number; teacher:string, teachershort: string, teacherlong: string, locationshort: string, locationlong: string, duration: number, availability: boolean, id: number, quantity: number} []=[{
     name: "HTML+CSS",
-    img: "assets/htmlcss.png",
+    img: "/assets/htmlcss.png",
     price: 250,
     teacher: "Mr. Johnson",
     teachershort: "Mr. Johnson, a seasoned software engineer, brings a wealth of industry experience to the programming course.",
@@ -13,7 +13,7 @@ export const courses: { name: string, img:string, price: number; teacher:string,
     quantity: 0
 },  {
     name: "Javascript",
-    img: "assets/Javascript.png",
+    img: "/assets/Javascript.png",
     price: 750,
     teacher: "Ms. Patel",
     teachershort: "Ms. Patel, an enthusiastic educator, focuses on creating a supportive and inclusive learning environment in her programming course.",
@@ -26,7 +26,7 @@ export const courses: { name: string, img:string, price: number; teacher:string,
     quantity: 0
 },  {
     name: "Php",
-    img: "assets/php.png",
+    img: "/assets/php.png",
     price: 2250,
     teacher: "Dr. Nguyen",
     teachershort: "Dr. Nguyen, a renowned researcher, brings cutting-edge knowledge and innovative teaching methods to the programming course.",
@@ -39,7 +39,7 @@ export const courses: { name: string, img:string, price: number; teacher:string,
     quantity: 0
 },  {
     name: "Java",
-    img: "assets/java.png",
+    img: "/assets/java.png",
     price: 2000,
     teacher: "Ms. Lee",
     teachershort: "Ms. Lee, a charismatic coding enthusiast, inspires students with her passion for programming and creative problem-solving.",
@@ -52,7 +52,7 @@ export const courses: { name: string, img:string, price: number; teacher:string,
     quantity: 0
 },  {
     name: "C",
-    img: "assets/C.png",
+    img: "/assets/C.png",
     price: 2500,
     teacher: "Mr. Rodriguez",
     teachershort: "Mr. Rodriguez, a patient and empathetic instructor, tailors his teaching approach to accommodate diverse learning styles.",
@@ -65,7 +65,7 @@ export const courses: { name: string, img:string, price: number; teacher:string,
     quantity: 0
 },  {
     name: "Python",
-    img: "assets/python2.png",
+    img: "/assets/python2.png",
     price: 3200,
     teacher: "Dr. Kim",
     teachershort: "Dr. Kim, an expert in algorithm design, equips students with advanced problem-solving techniques.",
