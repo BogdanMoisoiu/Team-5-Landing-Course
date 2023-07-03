@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Icourses } from '../Icourse';
 import { courses } from '../course';
 
 @Component({
@@ -8,5 +7,4 @@ import { courses } from '../course';
   styleUrls: ['./courses.component.scss']
 })
 export class CoursesComponent {
-  courses: Icourses[] = courses;
 }
