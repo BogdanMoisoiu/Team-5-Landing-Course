@@ -1,12 +1,13 @@
 .cartBody{
-    max-width: 100%;
+    // max-width: 100%;
     max-height: 20rem;
 }
-img{
-    width: 45%;
-}
+// img{
+//     width: 45%;
+// }
 .btns{
-    display: flex;
+    display: flex; 
+    gap: 3px;
     // justify-content: space-between;
 }
 .test{
@@ -16,4 +17,30 @@ img{
     width: 80%;
     
     margin: 0 auto;
+}
+.btn{
+    padding-top: 4px !important;
+}
+.mid{
+    padding-top: 7px;
+    padding-left: 5px;
+}
+
+@media only screen and (max-width: 700px){
+    .test{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        width: 80%;
+        
+        margin: 0 auto;
+    }
+    .btn{
+        padding-top: 4px !important;
+    }
+    .mid{
+        padding-top: 7px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
 }
