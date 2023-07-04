@@ -8,6 +8,7 @@ export class ServicService {
   cart: Icourses[] = [];
   constructor() { }
 
+
   getCartLength(): number {
     let amount = 0;
     for(let item of this.cart){
@@ -58,17 +59,7 @@ export class ServicService {
     return this.cart;
   }
 
-  clearCart() {
-    this.cart = [];
-    return this.cart;
-  }
+  
 
-  calculateTotal() {
-    let total: number = 0;
-    for (let val of this.cart) {
-      total += val.price * val.quantity;
-    }
-    const formattedTotal = Number(total.toFixed(2));
-    return formattedTotal;
-  }
+  
 }

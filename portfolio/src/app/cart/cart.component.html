@@ -3,8 +3,10 @@
         <p class="p-3 pm fw-bold">Cart - {{ length }} item(s)</p>
     </div>
     <div class="price">
-        <p class="fw-bold pm">Total Price:${{ formattedTotal }}</p>
+        <p class="fw-bold pm">Total Price:${{ total }}</p>
+        <p class="fw-bold pm" *ngIf="this.formattedTotal">Total Price with discount:${{ formattedTotal }}</p>
     </div>
+    <div *ngIf="this.formattedTotal">You got a discount of ${{discount}}</div>
     <div class="bp">
     <button (click)="buyItem()" class="btn btn-primary">Buy</button>
 </div>
@@ -13,6 +15,8 @@
     </div>
     
 </div>
+
+
 <div class="test">
 
 
