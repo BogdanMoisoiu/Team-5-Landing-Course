@@ -1,11 +1,11 @@
-.navbar {
-  background-color: #252422;
-  height: 60px;
-  padding-right: 10px;
-}
+
 
 .nav-link {
   color: #fffcf2;
+
+  &.active{
+    color: #ffe799;
+  }
 
   &:hover {
     color: #FF8120;
@@ -16,7 +16,7 @@
   color: #fffcf2;
 }
 
-.logo {
-  display: flex;
-  justify-content: space-between;
+.logo{
+display: flex;
+justify-content:space-between;
 }
