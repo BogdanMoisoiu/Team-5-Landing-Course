@@ -1,37 +1,38 @@
-<div class="d-flex justify-content-between">
-    <div class="bg-body-secondary d-flex" style="width: 750px; height: 60px;">
+<div class="cartCard">
+    <div class="bg-body-secondary d-flex">
         <p class="p-3 fw-bold">Cart - {{ length }} item(s)</p>
     </div>
-    <div *ngIf="product" style="width: 350px; height: 10px;">
+    <div class="price">
+        <p class="fw-bold">Total Price:${{ formattedTotal }}</p>
+    </div>
+    <div *ngIf="product">
         <p> {{ product.name }}</p>
     </div>
-    <div *ngFor="let product of cart; index as i" class="d-flex gap-4 justify-content-between" style="width: 750px;">
-        <div class="border border-light-subtle">
-            <div class="d-flex">
-                <img class="p-3" style="width: 400px; height: 220px" src="{{product.img}}" alt="">
-                <div class="p-3">
-                    <p class="fw-bold">{{ product.name }}</p>
-                    <br>
-                    <p>{{ product.teacher }}</p>
-                </div>
-                <div class="p-3">
-                    <p class="fw-bold">Price:${{ product.price }}</p>
-                    <p class="fw-bold">Price:${{ formattedTotal }}</p>
-                </div>
-                <div class="mt-5">
-                    <div>
-                        <button (click)="removeQuantity(i)" class="btn btn-danger mx-3"> - </button>
-                    </div>
-                    <div>
-                        <button class="btn btn-warning mx-3">{{ product.quantity}}</button>
-                    </div>
-                    <div>
-                        <button (click)="addQuantity(product.id)" class="btn btn-success mx-3"> + </button>
-                    </div>
-                    <div>
-                        <button (click)="removeFromCart(i)" class="btn btn-dark mx-3">delete</button>
-                    </div>
-                </div>
-            </div>
+    
+</div>
+<div class="test">
 
+
+<div *ngFor="let product of cart; index as i">
+    <div class="border border-light-subtle cartBody d-flex">
+        <img class="p-3" src="{{product.img}}" alt="">
+        <div class="d-flex flex-column">
+            <div class="p-3 text-center">
+                <p class="fw-bold">{{ product.name }}</p>
+                <p>{{ product.teacher }}</p>
+                <p class="fw-bold">Price:${{ product.price }}</p>
+            </div>
+            <div class="btns">
+                <button (click)="removeQuantity(i)" class="btn btn-danger"> - </button>
+            
+                <button class="btn btn-warning">{{ product.quantity}}</button>
+            
+                <button (click)="addQuantity(product.id)" class="btn btn-success"> + </button>
+            
+                <button (click)="removeFromCart(i)" class="btn btn-dark">delete</button>
+            </div>
         </div>
+    </div>
+</div>
+        
+      
