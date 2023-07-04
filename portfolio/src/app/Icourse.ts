@@ -8,6 +8,7 @@ export interface Icourses {
     locationshort: string,
     locationlong: string,
     duration: number,
+    skillLevel: string,
     availability: boolean,
     id: number,
     quantity: number

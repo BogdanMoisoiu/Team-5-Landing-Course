@@ -1,1 +1,19 @@
-<p>details works!</p>
+<h2 class="text-center fs-1 fw-bold mt-3">
+    Course Details
+</h2>
+<div *ngIf="product" class="d-flex justify-content-center align-items-center d-flex p-3 back">
+    <div style="width:600px ;" class="card text-center bg-dark">
+        <div class="card-body">
+            <div>
+                <h5 class="card-title text-light fw-bold fs-2">{{ product.name }}</h5>
+                <img src="{{product.img}}" alt="" style="width: 300px;">
+            </div>
+            <p class="card-text text-light fw-bold">Your teacher: {{ product.teacher }}</p>
+            <p class="card-text text-light">{{ product.teacherlong }}</p>
+            <p class="card-text text-light fw-bold">Your location: {{ product.locationshort}}</p>
+            <p class="card-text text-light">{{ product.locationlong }}</p>
+            <p class="card-text text-light"><small class="text-body-secondary fw-bold">${{ product.price }}</small></p>
+            <button (click)="addToCart()" class="btn btn mb-3">Add to cart</button>
+        </div>
+    </div>
+</div>
