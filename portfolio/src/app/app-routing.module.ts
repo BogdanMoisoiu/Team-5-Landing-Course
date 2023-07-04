@@ -7,6 +7,7 @@ import { ContactComponent } from './contact/contact.component';
 import { CartComponent } from './cart/cart.component';
 import { CoursesComponent } from './courses/courses.component';
 import { HeroComponent } from './hero/hero.component';
+import { NewsDetailsComponent } from './news-details/news-details.component';
 
 const routes: Routes = [{
   path: "",component: HomeComponent
@@ -24,6 +25,8 @@ const routes: Routes = [{
 },
 {
   path:"hero",component:HeroComponent
+},{
+  path: "read-more/:indexRouting", component: NewsDetailsComponent
 }];
 
 @NgModule({

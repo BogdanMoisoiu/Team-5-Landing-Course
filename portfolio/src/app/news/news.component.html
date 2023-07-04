@@ -6,14 +6,14 @@
 <hr>
 <h4 class="h4 text-center">Our latest news</h4>
 <br>
-<div class="flip" *ngFor="let new of news">
+<div class="flip" *ngFor="let new of news; index as i">
     <div class="front" style="background-image: url({{new.picture}});">
        <h1 class="text-shadow">{{new.name}}</h1>
     </div>
     <div class="back">
        <h2>{{new.name}}</h2>
        <p>{{new.about}}</p>
-       <button class="btn">Read more...</button>
+       <button class="btn" routerLink="/read-more/{{i}}">Read more...</button>
     </div>
 </div>
 <br>

@@ -13,6 +13,7 @@ import { FooterComponent } from './footer/footer.component';
 import { CartComponent } from './cart/cart.component';
 import { DetailsComponent } from './details/details.component';
 import { HeroComponent } from './hero/hero.component';
+import { NewsDetailsComponent } from './news-details/news-details.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { HeroComponent } from './hero/hero.component';
     FooterComponent,
     CartComponent,
     DetailsComponent,
-    HeroComponent
+    HeroComponent,
+    NewsDetailsComponent
   ],
   imports: [
     BrowserModule,
