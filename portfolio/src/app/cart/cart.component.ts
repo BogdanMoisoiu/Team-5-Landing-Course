@@ -38,4 +38,10 @@ export class CartComponent implements OnInit {
     this.ServicService.removeQuantity(i);
     this.formattedTotal = this.ServicService.calculateTotal();
   }
+
+  buyItem(){
+    window.alert('Your purchase was successful');
+    this.cart = this.ServicService.clearCart();
+  }
+
 }
