@@ -4,6 +4,10 @@
 
 .nav-link {
   color: #fffcf2;
+
+  &:hover {
+    color: #FF8120;
+  }
 }
 
 .nav-item {
