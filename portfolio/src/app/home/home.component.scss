@@ -9,3 +9,22 @@
     font-size: 35px;
     color: #ff8120;
 }
+
+h4 {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.fa {
+    color:#ff8120;
+}
+
+.revs {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+
+    .review {
+        width: 350px;
+    }
+}
