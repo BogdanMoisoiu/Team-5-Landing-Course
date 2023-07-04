@@ -1,10 +1,14 @@
-.navbar {
-  background-color: #252422;
-  height: 60px;
-}
+// .navbar {
+//   background-color: #252422;
+//   // height: 60px;
+// }
 
 .nav-link {
   color: #fffcf2;
+
+  &.active{
+    color: #ffe799;
+  }
 
   &:hover {
     color: #FF8120;
