@@ -1,0 +1,19 @@
+.cartBody{
+    max-width: 100%;
+    max-height: 20rem;
+}
+img{
+    width: 45%;
+}
+.btns{
+    display: flex;
+    // justify-content: space-between;
+}
+.test{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 80%;
+    
+    margin: 0 auto;
+}

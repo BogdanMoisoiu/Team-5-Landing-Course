@@ -9,7 +9,11 @@ export class ServicService {
   constructor() { }
 
   getCartLength(): number {
-    return this.cart.length;
+    let amount = 0;
+    for(let item of this.cart){
+      amount += item.quantity
+    }
+    return amount;
   }
 
   addQuantity(productId: number) {
