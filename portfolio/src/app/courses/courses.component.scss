@@ -1,20 +1,37 @@
 .col-info:hover>.popoverIcon {
     transform: scale(1.1);
-  }
+}
 
-.color{
+.color {
     background-color: floralwhite;
 }
-.color2{
-    background-color: orange;
+
+.color2 {
+    background-color: #252422;
+    border-radius: 15px;
+    height: 400px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
-.gapp{
-    gap: 60px;
-    display: flex;
-    justify-content: center;
-}
-
-*{
+* {
     color: white;
+}
+
+.btns {
+    padding: 6px;
+}
+
+.btn {
+    background-color: #ff8120;
+    color: #fffcf2;
+    border-radius: 10px;
+
+}
+
+.card-text {
+    color: #fffcf2;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
