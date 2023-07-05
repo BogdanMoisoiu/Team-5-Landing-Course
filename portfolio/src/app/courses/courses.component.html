@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 row-cols-xs-1 mt-4 text-center g-2">
         <div class="" *ngFor="let course of courses; index as i">
-            <div class="card color">
+            <div class="card color hey">
                 <div class="col-info">
                     <div class="popoverIcon">
                         <img style="width: 320px; height: 260px;" class="" src="{{course.img}}" alt="">
@@ -19,8 +19,8 @@
                 </div>
 
                 <div class="d-flex justify-content-between btns">
-                    <a routerLink="/course/{{ i }}" class="btn btn-primary">Details</a>
-                    <button (click)="addToCart(course)" class="btn btn-success">Buy</button>
+                    <a routerLink="/course/{{ i }}" class="btn">Details</a>
+                    <button (click)="addToCart(course)" class="btn">Buy</button>
                 </div>
             </div>
         </div>
