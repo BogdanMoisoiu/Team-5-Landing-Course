@@ -10,6 +10,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    
 
     hr {
         background-color: white;
@@ -79,7 +80,8 @@ h1 {
         display: block;
         color: white;
         width: inherit;
-        background-size: cover!important;
+        background-size: contain!important;
+        background-repeat: no-repeat!important;
         background-position: center!important;
         height: 380px;
         padding: 1em 2em;
