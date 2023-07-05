@@ -34,13 +34,13 @@
           <p class="card-text">Price:${{ product.price }}</p>
 
           <div class="btns">
-            <button (click)="removeQuantity(i)" class="btn-danger px-2"> - </button>
+            <button (click)="removeQuantity(i)" class="btn btn-danger px-2"> - </button>
         
-            <button class="btn-warning px-2">{{ product.quantity}}</button>
+            <button class="btn btn-warning px-2">{{ product.quantity}}</button>
         
-            <button (click)="addQuantity(product.id)" class="btn-success px-2"> + </button>
+            <button (click)="addQuantity(product.id)" class="btn btn-success px-2"> + </button>
         
-            <button (click)="removeFromCart(i)" class="btn-dark">delete</button>
+            <button (click)="removeFromCart(i)" class="btn btn-dark">delete</button>
         </div>
         </div>
       </div>
