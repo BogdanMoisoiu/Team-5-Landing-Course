@@ -16,7 +16,7 @@ h4 {
 }
 
 .fa {
-    color:#ff8120;
+    color: #ff8120;
 }
 
 .revs {
@@ -31,7 +31,7 @@ h4 {
 
 .container {
     height: 450px;
-    background-color: #ff8120;
+    background: linear-gradient(0deg, rgba(255, 252, 242, 1) 24%, rgba(64, 61, 57, 1) 68%, rgba(51, 49, 46, 1) 73%);
     box-shadow: 0 0 30px gray;
 }
 
@@ -41,7 +41,7 @@ h4 {
 
 @media only screen and (max-width: 800px) {
     .revs {
-        flex-direction: column; 
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
