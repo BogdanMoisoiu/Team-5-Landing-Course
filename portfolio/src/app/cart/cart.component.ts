@@ -74,9 +74,12 @@ export class CartComponent implements OnInit {
     return [total, formattedTotal];
   }
 
+  
+
   clearCart() {
     this.cart = [];
     this.discount = 0;
+    this.ServicService.resetQtty();
     return this.cart;
   }
 }
