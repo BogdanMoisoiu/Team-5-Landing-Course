@@ -1,6 +1,7 @@
 export interface Icourses {
     name: string,
     img: string,
+    description: string,
     price: number;
     teacher: string,
     teachershort: string,

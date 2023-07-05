@@ -1,6 +1,7 @@
-export const courses: { name: string, img: string, price: number; teacher: string, teachershort: string, teacherlong: string, locationshort: string, locationlong: string, duration: number, skillLevel: string, availability: boolean, id: number, quantity: number }[] = [{
+export const courses: { name: string, img: string, description: string, price: number; teacher: string, teachershort: string, teacherlong: string, locationshort: string, locationlong: string, duration: number, skillLevel: string, availability: boolean, id: number, quantity: number }[] = [{
     name: "HTML+CSS",
     img: "/assets/htmlcss.png",
+    description: "This course gets you the best for starters!",
     price: 250,
     teacher: "Bogdan Moisoiu",
     teachershort: "Bogdan, an expert in algorithm design and a seasoned software engineer, brings a wealth of industry experience to the programming course.",
@@ -15,6 +16,7 @@ export const courses: { name: string, img: string, price: number; teacher: strin
 }, {
     name: "Javascript",
     img: "/assets/Javascript.png",
+    description: "This course gets you the best hiring chance!",
     price: 750,
     teacher: "Winston Ngwa",
     teachershort: "Winston, an enthusiastic educator, focuses on creating a supportive and inclusive learning environment in his programming course.",
@@ -29,6 +31,7 @@ export const courses: { name: string, img: string, price: number; teacher: strin
 }, {
     name: "Php",
     img: "/assets/php.png",
+    description: "After finishing this course you are ready for backend!",
     price: 2250,
     teacher: "Natasa Cvrlja",
     teachershort: "Natasa, a renowned researcher, brings cutting-edge knowledge and innovative teaching methods to the programming course.",
@@ -43,6 +46,7 @@ export const courses: { name: string, img: string, price: number; teacher: strin
 }, {
     name: "Java",
     img: "/assets/java.png",
+    description: "This course is for backend junkys!",
     price: 2000,
     teacher: "Narek Shahverdyan",
     teachershort: "Narek, a charismatic coding enthusiast, inspires students with his passion for programming and creative problem-solving.",
@@ -59,6 +63,7 @@ export const courses: { name: string, img: string, price: number; teacher: strin
     img: "/assets/C.png",
     price: 2500,
     teacher: "Achmed Midajew",
+    description: "This course will make you a backend monster!",
     teachershort: "Achmed, a patient and empathetic instructor, tailors his teaching approach to accommodate diverse learning styles.",
     teacherlong: "The C Programming Basic course is a comprehensive program designed to introduce students to the foundational concepts of the C programming language. Throughout the course, you'll explore the core principles of C programming, including variables, data types, control structures, functions, arrays, and pointers. You'll learn how to write efficient and structured code, work with input and output operations, and handle memory management effectively.",
     locationshort: "University Campus",
@@ -71,6 +76,7 @@ export const courses: { name: string, img: string, price: number; teacher: strin
 }, {
     name: "Python",
     img: "/assets/python2.png",
+    description: "This course is going to make your wishes true!",
     price: 3200,
     teacher: "Bogdan Moisoiu",
     teachershort: "Bogdan, an expert in algorithm design and a seasoned software engineer, equips students with advanced problem-solving techniques.",
