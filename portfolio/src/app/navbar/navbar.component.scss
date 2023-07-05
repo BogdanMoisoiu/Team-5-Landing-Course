@@ -3,20 +3,37 @@
 .nav-link {
   color: #fffcf2;
 
-  &.active{
-    color: #ffe799;
-  }
-
   &:hover {
     color: #FF8120;
   }
+
 }
 
 .nav-item {
   color: #fffcf2;
+  padding-right: 20%;
 }
 
 .logo{
 display: flex;
 justify-content:space-between;
+}
+
+.navbar-brand {
+  flex-basis: 57%;
+}
+
+.carts {
+   display: flex;
+   gap: 5px;
+
+   .cart {
+    display: flex;
+    align-items: center;
+   }
+
+   .badge {
+    background-color: #fffcf2;
+    color: #ff8120;
+   }
 }
