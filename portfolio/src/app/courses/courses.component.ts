@@ -13,7 +13,7 @@ export class CoursesComponent {
 
   constructor(private ServicService: ServicService) {}
   addToCart(product: Icourses): void {
-    alert("Product was added to the Cart");
+   
     this.ServicService.addToCart(product);
   }
 }
