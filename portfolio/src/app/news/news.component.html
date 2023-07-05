@@ -1,23 +1,22 @@
 <div class="container">
     <br>
     <h2 class="display-4 shad">Stay informed</h2>
-<h6 class="h6">Some text here, a bit longer, like this is enough</h6>
+    <h6 class="h6">Unleash your coding potential and stay ahead of the digital revolution</h6>
 
-<hr>
-<h4 class="h4 text-center">Our latest news</h4>
-<br>
-<div class="flip" *ngFor="let new of news; index as i">
-    <div class="front" style="background-image: url({{new.picture}});">
-       <h1 class="text-shadow">{{new.name}}</h1>
+    <hr>
+    <h4 class="h4 text-center">Our latest news</h4>
+    <br>
+    <div class="flip" *ngFor="let new of news; index as i">
+        <div class="front" style="background-image: url({{new.picture}});">
+            <h1 class="text-shadow">{{new.name}}</h1>
+        </div>
+        <div class="back">
+            <h2>{{new.name}}</h2>
+            <p>{{new.about}}</p>
+            <button class="btn" routerLink="/read-more/{{i}}">Read more...</button>
+        </div>
     </div>
-    <div class="back">
-       <h2>{{new.name}}</h2>
-       <p>{{new.about}}</p>
-       <button class="btn" routerLink="/read-more/{{i}}">Read more...</button>
-    </div>
+    <br>
+    <hr>
+    <br>
 </div>
-<br>
-<hr>
-<br>
-</div>
-
