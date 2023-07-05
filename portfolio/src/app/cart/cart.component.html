@@ -8,7 +8,8 @@
     </div>
     <div *ngIf="this.formattedTotal">You got a discount of ${{discount}}</div>
     <div class="bp">
-    <button (click)="buyItem()" class="btn btn-primary">Buy</button>
+    <button (click)="navigateTo('http://localhost:4200/cart')" class="btn btn-primary">Buy</button>
+
 </div>
     <div *ngIf="product">
         <p> {{ product.name }}</p>

@@ -46,6 +46,11 @@ export class CartComponent implements OnInit {
     this.total = this.calculateTotal()[0];
   }
 
+    navigateTo(url: string): void {
+      window.location.href = url;
+      window.alert('Your purchase was successful');
+    }
+
   buyItem(){
     window.alert('Your purchase was successful');
     this.cart = this.clearCart();
