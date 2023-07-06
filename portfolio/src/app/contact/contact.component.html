@@ -2,16 +2,31 @@
     <div class="container">
 <section class="contact" id="contact">
 
-    <form action="" [formGroup]="info" (ngSubmit)="onSubmit()">
+    <form action="" [formGroup]="info" (ngSubmit)="onSubmit()" class="w-100">
         <h3>Contact Us</h3>
         <label class="required">Name:</label>
         <input type="text" placeholder="your name" class="box" formControlName="name" required minlength="4" required="">
+        <p *ngIf="info.invalid && info.touched">
+          <span *ngIf="info.controls.name.errors?.['required']">Name can't be empty</span>
+          <span *ngIf="info.controls.name.errors?.['minlength']">Name must be 3 char at least</span>
+      </p>
         <label class="required">Email:</label>
         <input type="email" placeholder="your email" class="box" formControlName="email" required minlength="4">
+        <p *ngIf="info.invalid && info.touched">
+          <span *ngIf="info.controls.email.errors?.['required']">Email can't be empty</span>
+          <span *ngIf="info.controls.email.errors?.['minlength']">Email must be 3 char at least</span>
+      </p>
         <label class="required">Phone Number:</label>
         <input type="phone-number" placeholder="your number" class="box" formControlName="phNum">
+        <p *ngIf="info.invalid && info.touched">
+          <span *ngIf="info.controls.phNum.errors?.['required']">Phone Number can't be empty</span>
+      </p>
         <label class="required">Message:</label>
         <textarea name="" placeholder="your message" id="" cols="30" rows="10" formControlName="textMes" required minlength="10"></textarea>
+        <p *ngIf="info.invalid && info.touched">
+          <span *ngIf="info.controls.textMes.errors?.['required']">Message can't be empty</span>
+          <span *ngIf="info.controls.textMes.errors?.['minlength']">Message must be 8  char at least</span>
+      </p>
         <input type="submit" value="send message" class="btn">
         <div *ngIf="info.invalid" class="alert">
       <div *ngIf="info.errors?.['required']">
