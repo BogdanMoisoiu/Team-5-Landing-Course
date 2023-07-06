@@ -46,10 +46,10 @@ export class CartComponent implements OnInit {
     this.total = this.calculateTotal()[0];
   }
 
-    navigateTo(url: string): void {
-      window.location.href = url;
-      window.alert('Your purchase was successful');
-    }
+    // navigateTo(url: string): void {
+    //   window.location.href = url;
+    //   window.alert('Your purchase was successful');
+    // }
 
   buyItem(){
     window.alert('Your purchase was successful');
@@ -77,9 +77,9 @@ export class CartComponent implements OnInit {
   
 
   clearCart() {
-    this.cart = [];
+    // this.cart = [];
     this.discount = 0;
     this.ServicService.resetQtty();
-    return this.cart;
+    return this.cart = [];
   }
 }

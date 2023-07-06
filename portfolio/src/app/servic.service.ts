@@ -59,11 +59,11 @@ export class ServicService {
     return this.cart;
   }
 
-  resetQtty(): null {
+  resetQtty(): any {
     for(let item of this.cart){
-      item.quantity = 0
+      item.quantity = 0;
     }
-    return null
+    return this.cart = []
   }
 
   
