@@ -41,7 +41,7 @@ h2{
     font-size: 1rem;
     text-transform: none;
     background-color: #fff;
-    color: #FF8120;
+    color: #252422;
     padding: 1rem ;
     margin: 1rem 0;
 }
@@ -51,7 +51,7 @@ h2{
     border-width: .1rem;
     font-size: 1rem;
     text-transform: none;
-    color: #FF8120;
+    color: #252422;
     padding: 1rem;
     margin: 1rem 0;
 }
@@ -78,4 +78,7 @@ textarea {
 }
 
 
-
+.required:after {
+    content:" *";
+    color: red;
+  }
